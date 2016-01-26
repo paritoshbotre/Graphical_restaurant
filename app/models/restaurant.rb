@@ -6,5 +6,8 @@ class Restaurant
   field :cuisine,  type: String, default: ""
   field :location, type: String, default: ""
 
+  validates :name, :cuisine, presence: true
+
   has_many :menus
+  has_many :assets
 end
