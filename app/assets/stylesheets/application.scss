@@ -11,9 +11,14 @@
  * file per style scope.
  *
  *= require toastr
+ *= require_tree .
+ *= require_self
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body { padding-top: 70px; }
+body { 
+  padding-top: 70px;
+  background: #f3f2f0;
+}
