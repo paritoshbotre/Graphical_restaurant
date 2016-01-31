@@ -1,6 +1,16 @@
+=# render 'photos'
+#photo
 - @restaurants.each do |restaurant|
   .list_box
     .row
       .header
         %h2= restaurant.name
         %p.red= restaurant.location
+      .col-md-2
+        - if restaurant.assets.any?
+          = image_tag restaurant.assets.first.avatar.url(:thumb)
+      .col-md-10
+        .cuisine
+          %h4= restaurant.cuisine
+        .clearfix
+          = link_to 'PHOTOS', photo_restaurant_path(restaurant), remote: true, class: 'btn btn-primary'

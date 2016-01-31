@@ -149,6 +149,7 @@ GEM
     rake (10.5.0)
     rdoc (4.2.1)
       json (~> 1.4)
+    rmagick (2.15.4)
     ruby_parser (3.6.5)
       sexp_processor (~> 4.1)
     sass (3.4.21)
@@ -204,6 +205,7 @@ DEPENDENCIES
   mongoid-grid_fs!
   nested_form
   rails (= 4.2.5.1)
+  rmagick
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form

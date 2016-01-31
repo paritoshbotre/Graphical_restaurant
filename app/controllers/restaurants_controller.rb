@@ -33,6 +33,10 @@ class RestaurantsController < ApplicationController
       render 'edit'
     end
   end
+  
+  def photo
+    @restaurant = Restaurant.find(params[:id])
+  end
 
   private
 
